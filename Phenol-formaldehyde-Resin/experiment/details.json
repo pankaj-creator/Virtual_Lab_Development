@@ -1,0 +1,46 @@
+{
+
+   "details": [
+       {
+			"Experiment": "Preparation of Phenol-formaldehyde and Urea-formaldehyde resin",     
+			"Lab": "Engineering Chemistry Lab",               
+			"Discipline": "Engineering Chemistry",				 
+			"Technology": "HTML, CSS, JS, Animation"         
+       }
+   ],
+
+   "developer": [
+       {       
+      "Developer": "Dr. Syed Khalid Hasan",         
+      "Institute": "Institute of Technology and Management, Gida, Gorakhpur",         
+      "InstituteAcronym": "ITM, GIDA, GORAKHPUR"   
+       }
+   ],
+
+   "contributer": [
+       {       
+			"Contributer": "Abhishek Mishra",             
+      "Institute": "Institute of Technology and Management, Gida, Gorakhpur",               
+			"InstituteAcronym": "ITM, GIDA, GORAKHPUR"         
+       },
+
+       {       
+			"Contributer": "Pankaj Kumar Gond",              
+      "Institute": "Institute of Technology and Management, Gida, Gorakhpur",               
+			"InstituteAcronym": "ITM, GIDA, GORAKHPUR"         
+       },
+
+       {       
+			"Contributer": "Kriti Shukla ",             
+      "Institute": "Institute of Technology and Management, Gida, Gorakhpur",               
+			"InstituteAcronym": "ITM, GIDA, GORAKHPUR"         
+       },
+
+       {       
+			"Contributer": "Ashish Shukla",              
+      "Institute": "Institute of Management and Studies, Noida, Uttar Pradesh",               
+			"InstituteAcronym": "IMS, NOIDA"         
+       }
+   ]
+
+}
