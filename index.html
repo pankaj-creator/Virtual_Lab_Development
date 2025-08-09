@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Lab Development - Interactive Learning Platform</title>
+    <meta name="description" content="Interactive virtual laboratories for computer science and chemistry education. Explore data structures, algorithms, and chemical processes through immersive simulations.">
+    <meta name="keywords" content="virtual lab, education, computer science, chemistry, data structures, interactive learning">
+    <meta name="author" content="Pankaj Kumar">
+    <meta name="theme-color" content="#667eea">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiBmaWxsPSIjNjY3ZWVhIiByeD0iMzIiLz4KPHBhdGggZD0iTTk2IDQ4QzEyMC4zIDQ4IDE0MCA2Ny43IDE0MCA5MkMxNDAgMTE2LjMgMTIwLjMgMTM2IDk2IDEzNkM3MS43IDEzNiA1MiAxMTYuMyA1MiA5MkM1MiA2Ny43IDcxLjcgNDggOTYgNDhaIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjIiLz4KPHBhdGggZD0iTTk2IDY0QzExMS4zIDY0IDEyNCA3Ni43IDEyNCA5MkMxMjQgMTA3LjMgMTExLjMgMTIwIDk2IDEyMEM4MC43IDEyMCA2OCAxMDcuMyA2OCA5MkM2OCA3Ni43IDgwLjcgNjQgOTYgNjRaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNOTYgMTQ0QzEwNi44IDE0NCAxMTYuNiAxNDcuNyAxMjQuNCAxNTQuNEMxMzEuMSAxNjAuMSAxMzUuNyAxNjguMSAxMzYgMTc2SDE1NkMxNTYgMTY4IDE1MiAxNjAuNCAxNDYuMiAxNTQuNkMxNDAuNCAxNDguOCAxMzIuOCAxNDQuOCAxMjUgMTQ0SDk2WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-flask"></i>
+                <span>Virtual Labs</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#labs" class="nav-link">Labs</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#external" class="nav-link">External Links</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">Virtual Lab Development</span>
+            </h1>
+            <p class="hero-subtitle">Interactive Learning Platform for Computer Science & Chemistry</p>
+            <p class="hero-description">
+                Explore cutting-edge virtual laboratories designed for hands-on learning experiences in 
+                data structures, algorithms, and chemical processes. Built with modern web technologies 
+                for immersive educational experiences.
+            </p>
+            <div class="hero-buttons">
+                <a href="#labs" class="btn btn-primary">
+                    <i class="fas fa-microscope"></i>
+                    Explore Labs
+                </a>
+                <a href="https://erpankaj.netlify.app/#resume" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fas fa-user"></i>
+                    My Portfolio
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Virtual Labs</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="100">0</span>
+                    <span class="stat-label">Students Reached</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="24">0</span>
+                    <span class="stat-label">24/7 Availability</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Labs Section -->
+    <section id="labs" class="labs-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-vials"></i>
+                Virtual Laboratories
+            </h2>
+            <p class="section-subtitle">Interactive simulations for enhanced learning</p>
+            
+            <div class="labs-grid">
+                <!-- Circular Queue Lab -->
+                <div class="lab-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="lab-header">
+                        <div class="lab-icon">
+                            <i class="fas fa-circle-notch"></i>
+                        </div>
+                        <div class="lab-status">
+                            <span class="status-dot status-active"></span>
+                            <span class="status-text">Live</span>
+                        </div>
+                    </div>
+                    <h3 class="lab-title">Circular Queue using Array</h3>
+                    <p class="lab-description">
+                        Interactive implementation of circular queue data structure using arrays. 
+                        Learn FIFO principles with real-time visualization and step-by-step execution.
+                    </p>
+                    <div class="lab-tags">
+                        <span class="tag">Data Structures</span>
+                        <span class="tag">Arrays</span>
+                        <span class="tag">FIFO</span>
+                    </div>
+                    <div class="lab-actions">
+                        <a href="eb3_Mind-benders_Circular-queue-using-array/experiment/simulation/index.html" 
+                           target="_blank" class="btn btn-primary btn-small">
+                            <i class="fas fa-play"></i>
+                            View Lab
+                        </a>
+                        <a href="https://github.com/pankaj-creator/Virtual_Lab_Development/tree/main/eb3_Mind-benders_Circular-queue-using-array" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-small">
+                            <i class="fas fa-code"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Queue Array Lab -->
+                <div class="lab-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="lab-header">
+                        <div class="lab-icon">
+                            <i class="fas fa-list"></i>
+                        </div>
+                        <div class="lab-status">
+                            <span class="status-dot status-active"></span>
+                            <span class="status-text">Live</span>
+                        </div>
+                    </div>
+                    <h3 class="lab-title">Queue using Array</h3>
+                    <p class="lab-description">
+                        Comprehensive queue implementation using arrays. Explore enqueue, dequeue operations 
+                        with interactive animations and algorithmic visualizations.
+                    </p>
+                    <div class="lab-tags">
+                        <span class="tag">Data Structures</span>
+                        <span class="tag">Queues</span>
+                        <span class="tag">Algorithms</span>
+                    </div>
+                    <div class="lab-actions">
+                        <a href="eb3_Mind-benders_queue-using-array/experiment/simulation/index.html" 
+                           target="_blank" class="btn btn-primary btn-small">
+                            <i class="fas fa-play"></i>
+                            View Lab
+                        </a>
+                        <a href="https://github.com/pankaj-creator/Virtual_Lab_Development/tree/main/eb3_Mind-benders_queue-using-array" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-small">
+                            <i class="fas fa-code"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Queue Linked List Lab -->
+                <div class="lab-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="lab-header">
+                        <div class="lab-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <div class="lab-status">
+                            <span class="status-dot status-active"></span>
+                            <span class="status-text">Live</span>
+                        </div>
+                    </div>
+                    <h3 class="lab-title">Queue using Linked List</h3>
+                    <p class="lab-description">
+                        Dynamic queue implementation using linked lists. Understand pointer management, 
+                        memory allocation, and linked data structures through interactive simulations.
+                    </p>
+                    <div class="lab-tags">
+                        <span class="tag">Linked Lists</span>
+                        <span class="tag">Pointers</span>
+                        <span class="tag">Memory Management</span>
+                    </div>
+                    <div class="lab-actions">
+                        <a href="eb3_Mind-Benders_Queue-using-Linked-List/experiment/simulation/index.html" 
+                           target="_blank" class="btn btn-primary btn-small">
+                            <i class="fas fa-play"></i>
+                            View Lab
+                        </a>
+                        <a href="https://github.com/pankaj-creator/Virtual_Lab_Development/tree/main/eb3_Mind-Benders_Queue-using-Linked-List" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-small">
+                            <i class="fas fa-code"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Chemistry Lab -->
+                <div class="lab-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="lab-header">
+                        <div class="lab-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="lab-status">
+                            <span class="status-dot status-active"></span>
+                            <span class="status-text">Live</span>
+                        </div>
+                    </div>
+                    <h3 class="lab-title">Phenol-formaldehyde Resin</h3>
+                    <p class="lab-description">
+                        Virtual chemistry lab for thermosetting resin preparation. Learn polymer chemistry, 
+                        synthesis pathways, and material properties through interactive experiments.
+                    </p>
+                    <div class="lab-tags">
+                        <span class="tag">Chemistry</span>
+                        <span class="tag">Polymers</span>
+                        <span class="tag">Synthesis</span>
+                    </div>
+                    <div class="lab-actions">
+                        <a href="Phenol-formaldehyde-Resin/experiment/simulation/index.html" 
+                           target="_blank" class="btn btn-primary btn-small">
+                            <i class="fas fa-play"></i>
+                            View Lab
+                        </a>
+                        <a href="https://github.com/pankaj-creator/Virtual_Lab_Development/tree/main/Phenol-formaldehyde-Resin" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-small">
+                            <i class="fas fa-code"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- External Links Section -->
+    <section id="external" class="external-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-external-link-alt"></i>
+                University Platforms
+            </h2>
+            <p class="section-subtitle">Visit our official virtual lab platforms</p>
+            
+            <div class="external-links">
+                <div class="external-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="external-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>VLab Official</h3>
+                    <p>Access comprehensive virtual laboratories on the official university platform</p>
+                    <a href="https://www.vlab.co.in/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i>
+                        Visit VLab
+                    </a>
+                </div>
+                
+                <div class="external-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="external-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>eBootathon</h3>
+                    <p>Explore innovative educational bootcamps and advanced learning experiences</p>
+                    <a href="https://ebootathon.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i>
+                        Visit eBootathon
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-info-circle"></i>
+                About the Developer
+            </h2>
+            
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Passionate Developer & Educator</h3>
+                    <p>
+                        I'm a dedicated software developer with a passion for creating educational technology solutions. 
+                        My work focuses on developing interactive virtual laboratories that bridge the gap between 
+                        theoretical knowledge and practical application.
+                    </p>
+                    <p>
+                        With expertise in web technologies, data structures, and educational methodologies, I strive 
+                        to create engaging learning experiences that make complex concepts accessible to students 
+                        worldwide. These virtual labs have been developed to enhance the learning experience in 
+                        computer science and chemistry education.
+                    </p>
+                    
+                    <div class="skills">
+                        <h4>Technical Skills</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">Web Development</span>
+                            <span class="skill-tag">Educational Technology</span>
+                            <span class="skill-tag">Data Structures</span>
+                            <span class="skill-tag">Algorithm Visualization</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-actions">
+                        <a href="https://erpankaj.netlify.app/#resume" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <i class="fas fa-user"></i>
+                            View Full Portfolio
+                        </a>
+                        <a href="https://github.com/pankaj-creator" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <i class="fab fa-github"></i>
+                            GitHub Profile
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="code-title">virtual-lab.js</span>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="code-keyword">class</span> 
+                                <span class="code-class">VirtualLab</span> {
+                            </div>
+                            <div class="code-line">
+                                &nbsp;&nbsp;<span class="code-keyword">constructor</span>() {
+                            </div>
+                            <div class="code-line">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-property">this</span>.<span class="code-property">mission</span> = <span class="code-string">'Education'</span>;
+                            </div>
+                            <div class="code-line">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-property">this</span>.<span class="code-property">passion</span> = <span class="code-string">'Innovation'</span>;
+                            </div>
+                            <div class="code-line">
+                                &nbsp;&nbsp;}
+                            </div>
+                            <div class="code-line">}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-flask"></i>
+                        <span>Virtual Labs</span>
+                    </div>
+                    <p>Interactive learning platform for the future of education.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#labs">Labs</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="https://erpankaj.netlify.app/#resume" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>External Platforms</h4>
+                    <ul>
+                        <li><a href="https://www.vlab.co.in/" target="_blank" rel="noopener noreferrer">VLab Official</a></li>
+                        <li><a href="https://ebootathon.com/" target="_blank" rel="noopener noreferrer">eBootathon</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/pankaj-creator" target="_blank" rel="noopener noreferrer" title="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://erpankaj.netlify.app/#resume" target="_blank" rel="noopener noreferrer" title="Portfolio Website">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Virtual Lab Development. Made with ❤️ for education.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

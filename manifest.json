@@ -1,0 +1,25 @@
+{
+    "name": "Virtual Lab Development",
+    "short_name": "VLab Dev",
+    "description": "Interactive Learning Platform for Computer Science & Chemistry",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#667eea",
+    "theme_color": "#667eea",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiBmaWxsPSIjNjY3ZWVhIiByeD0iMzIiLz4KPHBhdGggZD0iTTk2IDQ4QzEyMC4zIDQ4IDE0MCA2Ny43IDE0MCA5MkMxNDAgMTE2LjMgMTIwLjMgMTM2IDk2IDEzNkM3MS43IDEzNiA1MiAxMTYuMyA1MiA5MkM1MiA2Ny43IDcxLjcgNDggOTYgNDhaIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjIiLz4KPHBhdGggZD0iTTk2IDY0QzExMS4zIDY0IDEyNCA3Ni43IDEyNCA5MkMxMjQgMTA3LjMgMTExLjMgMTIwIDk2IDEyMEM4MC43IDEyMCA2OCAxMDcuMyA2OCA5MkM2OCA3Ni43IDgwLjcgNjQgOTYgNjRaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNOTYgMTQ0QzEwNi44IDE0NCAxMTYuNiAxNDcuNyAxMjQuNCAxNTQuNEMxMzEuMSAxNjAuMSAxMzUuNyAxNjguMSAxMzYgMTc2SDE1NkMxNTYgMTY4IDE1MiAxNjAuNCAxNDYuMiAxNTQuNkMxNDAuNCAxNDguOCAxMzIuOCAxNDQuOCAxMjUgMTQ0SDk2WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+",
+            "sizes": "192x192",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiBmaWxsPSIjNjY3ZWVhIiByeD0iODQiLz4KPHBhdGggZD0iTTI1NiAxMjhDMzIxLjYgMTI4IDM3NiAxODIuNCAzNzYgMjQ4QzM3NiAzMTMuNiAzMjEuNiAzNjggMjU2IDM2OEMxOTAuNCAzNjggMTM2IDMxMy42IDEzNiAyNDhDMTM2IDE4Mi40IDE5MC40IDEyOCAyNTYgMTI4WiIgZmlsbD0id2hpdGUiIGZpbGwtb3BhY2l0eT0iMC4yIi8+CjxwYXRoIGQ9Ik0yNTYgMTcyQzI5Ni44IDE3MiAzMzIgMjA3LjIgMzMyIDI0OEMzMzIgMjg4LjggMjk2LjggMzI0IDI1NiAzMjRDMjE1LjIgMzI0IDE4MCAyODguOCAxODAgMjQ4QzE4MCAyMDcuMiAyMTUuMiAxNzIgMjU2IDE3MloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yNTYgMzg0QzI4NS4yIDM4NCAzMTIgMzkzLjYgMzMzLjYgNDA5LjJDMzU1LjIgNDI0LjggMzY4IDQ0Ny4yIDM2OCA0NzJINDE2QzQxNiA0NDguOCA0MDcuMiA0MjcuMiAzOTEuNiA0MTEuNkMzNzYgMzk2IDM1NC40IDM4Ny4yIDMzMiAzODRIMjU2WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+",
+            "sizes": "512x512",
+            "type": "image/svg+xml"
+        }
+    ],
+    "categories": ["education", "productivity", "utilities"],
+    "lang": "en",
+    "dir": "ltr"
+}
