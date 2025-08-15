@@ -380,14 +380,97 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Virtual Lab Development - Website Initialized');
     
     // Add loading animation
-    document.body.classList.add('loaded');
-    
-    // Delayed initialization for better performance
     setTimeout(() => {
-        // Initialize any additional components here
-        updateScrollProgress();
+        document.body.classList.add('loaded');
     }, 100);
+    
+    // Initialize scroll progress
+    updateScrollProgress();
+    
+    // Ensure all buttons are properly styled
+    initializeButtons();
+    
+    // Initialize mobile menu if needed
+    initializeMobileMenu();
 });
+
+// Initialize buttons with proper event listeners
+function initializeButtons() {
+    document.querySelectorAll('.btn').forEach(btn => {
+        // Ensure no duplicate event listeners
+        btn.removeEventListener('click', handleButtonClick);
+        btn.addEventListener('click', handleButtonClick);
+    });
+}
+
+// Enhanced button click handler
+function handleButtonClick(e) {
+    const btn = e.currentTarget;
+    
+    // Create enhanced ripple effect
+    const ripple = document.createElement('span');
+    const rect = btn.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    const x = e.clientX - rect.left - size / 2;
+    const y = e.clientY - rect.top - size / 2;
+    
+    ripple.style.width = ripple.style.height = size + 'px';
+    ripple.style.left = x + 'px';
+    ripple.style.top = y + 'px';
+    ripple.classList.add('ripple');
+    
+    btn.appendChild(ripple);
+    
+    setTimeout(() => {
+        if (ripple.parentNode) {
+            ripple.remove();
+        }
+    }, 600);
+    
+    // Add visual feedback
+    btn.style.transform = 'scale(0.95)';
+    setTimeout(() => {
+        btn.style.transform = '';
+    }, 150);
+}
+
+// Enhanced mobile menu initialization
+function initializeMobileMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+}
 
 // Service Worker for offline functionality (optional)
 if ('serviceWorker' in navigator) {
